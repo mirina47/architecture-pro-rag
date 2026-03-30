@@ -53,3 +53,19 @@
 [Логи 5 успешных ответов](Task5/successful_answers.log)
 
 [Логи 5 отказов или фильтрованных ситуаций](Task5/failed_answers.log)
+
+# Задание 6. Автоматическое ежедневное обновление базы знаний
+
+[Скрипт с логикой обновления индекса](Task6/update_index.py): сканирует `C:\yandex-practicum\architecture-pro-rag\Task2\knowledge_base` на наличие новых или измененных файлов, генерирует эмбеддинги для новых чанков и добавляет в существующий индекс FAISS. `state.json` позволяет отслеживать изменения файлов.
+
+**Настройка cron-задачи:**
+1. Открыть "Планировщик задач"
+2. Создать задачу:
+    - Имя: UpdateRagIndex
+    - Триггеры: ежедневно в 01:00
+    - Действия: запуск программы `C:\yandex-practicum\architecture-pro-rag\.venv\Scripts\python.exe`, аргументы `C:\yandex-practicum\architecture-pro-rag\Task6\update_index.py`, рабочая папка `C:\yandex-practicum\architecture-pro-rag\Task6`
+    - Параметры: при сбое выполнения перезапускать через 1 час, количество попыток 3
+
+[Архитектурная диаграмма](Task6/architecture.puml)
+
+[Логи обновления индекса](Task6/update.log): запуск задачи в 00:57 происходил вручную, в 01:00 автоматически по расписанию. 

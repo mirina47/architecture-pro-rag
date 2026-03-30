@@ -1,0 +1,45 @@
+@startuml architecture_RAG
+title Architecture RAG Index Update
+
+skinparam componentStyle rectangle
+
+actor "Windows Task Scheduler" as scheduler
+
+rectangle "Knowledge Base" {
+    [.txt documents] as docs
+}
+
+[update_index.py] as script
+
+rectangle {
+    [Text Splitter\n(Chunks)] as chunks
+    [SentenceTransformer\nEmbeddings] as embed
+}
+
+rectangle {
+    [FAISS Index\nfaiss.index] as index
+    [Metadata\nmetadata.pkl] as meta
+    [File State\nstate.json] as state
+}
+
+rectangle {
+    [update.log] as log
+}
+
+scheduler --> script : "Запуск ежедневно в 01:00\n(3 попытки при ошибке, интервал 1 час)"
+
+docs --> script : "Сканирование файлов"
+
+script --> chunks : "Разбивка текста"
+
+chunks --> embed : "Генерация эмбеддингов"
+
+embed --> index : "Обновление индекса"
+
+script --> meta : "Сохранение метаданных"
+
+script --> state : "Обновление хэшей файлов"
+
+script --> log : "Логирование"
+
+@enduml
