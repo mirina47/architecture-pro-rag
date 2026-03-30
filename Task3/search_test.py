@@ -23,7 +23,7 @@ with open(META_FILE, "rb") as f:
     metadata = pickle.load(f)
 
 
-print("\Запрос:", QUERY)
+print("Запрос:", QUERY)
 
 query_vector = model.encode(
     [QUERY],

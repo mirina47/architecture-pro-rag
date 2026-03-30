@@ -18,10 +18,8 @@ META_FILE = BASE_DIR.parent / "Task3" / "metadata.pkl"
 MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
 TOP_K = 5
 
-# Yandex Cloud
-YANDEX_API_KEY = os.environ.get("YANDEX_API_KEY")   
-YANDEX_FOLDER_ID = os.environ.get("YANDEX_FOLDER_ID")   
-YANDEX_MODEL_URI = f"gpt://{YANDEX_FOLDER_ID}/yandexgpt"
+# OpenRouter
+OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY")
 
 # ================= INIT =================
 
@@ -37,8 +35,6 @@ with open(META_FILE, "rb") as f:
 
 print("Подключение LLM...")
 
-if not YANDEX_API_KEY or not YANDEX_FOLDER_ID:
-    raise ValueError("Отсутствуют YANDEX_API_KEY и YANDEX_FOLDER_ID в .env")
 
 # ================= SEARCH =================
 
@@ -55,10 +51,7 @@ def search(query: str):
 
 # ================= PROMPT =================
 
-def build_prompt(question: str, chunks: list):
-    context = "\n\n".join([c["text"] for c in chunks])
-
-    prompt = f"""
+SYSTEM_PROMPT = """
 You are a helpful assistant that answers questions using ONLY the provided context.
 
 If the answer is not in the context, say exactly: I don't know.
@@ -71,6 +64,8 @@ Step 3: ...
 
 Final answer: ...
 
+There must be an empty line before 'Final answer:'.
+
 Few-shot examples:
 
 Q: What school did Zight Qun attend?
@@ -78,6 +73,7 @@ A:
 Step 1: I search the context for Zight Qun's education.
 Step 2: The document states that Zight Qun attended Sheration.
 Step 3: Therefore the answer is Sheration.
+
 Final answer: Sheration
 
 Q: Who defeated Lord Lantihoust?
@@ -85,10 +81,15 @@ A:
 Step 1: I search the context for battles involving Lord Lantihoust.
 Step 2: The document says Zight Qun defeated Lord Lantihoust.
 Step 3: Therefore the answer is Zight Qun.
+
 Final answer: Zight Qun
+"""
 
----
 
+def build_prompt(question: str, chunks: list):
+    context = "\n\n".join([c["text"] for c in chunks])
+
+    prompt = f"""
 Context:
 {context}
 
@@ -102,42 +103,41 @@ Answer:
     return prompt
 
 
-# ================= LLM (YandexGPT) =================
+# ================= LLM =================
+
 def ask_llm(prompt: str) -> str:
-    url = "https://llm.api.cloud.yandex.net/foundationModels/v1/completion"
+    url = "https://openrouter.ai/api/v1/chat/completions"
 
     headers = {
-        "Authorization": f"Api-Key {YANDEX_API_KEY}",
+        "Authorization": f"Bearer {OPENROUTER_API_KEY}",
         "Content-Type": "application/json"
     }
 
     data = {
-        "modelUri": YANDEX_MODEL_URI,
-        "completionOptions": {
-            "stream": False,
-            "temperature": 0.2,
-            "maxTokens": 700
-        },
+        "model": "nvidia/nemotron-3-nano-30b-a3b:free",
+        "temperature": 0.2,
+        "max_tokens": 700,
         "messages": [
             {
                 "role": "system",
-                "text": (
-                    "You are a reasoning assistant. "
-                    "Always explain your reasoning step-by-step "
-                    "before giving the final answer."
-                )
+                "content": SYSTEM_PROMPT
             },
-            {"role": "user", "text": prompt}
+            {
+                "role": "user",
+                "content": prompt
+            }
         ]
     }
 
     response = requests.post(url, headers=headers, json=data)
 
-    if response.status_code == 200:
+    try:
         result = response.json()
-        return result["result"]["alternatives"][0]["message"]["text"]
-    else:
-        return f"LLM error: {response.text}"
+        return result["choices"][0]["message"]["content"]
+    except Exception:
+        print("LLM raw response:", response.text)
+        return "I don't know"
+
 
 # ================= PIPELINE =================
 
