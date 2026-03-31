@@ -1,0 +1,44 @@
+@startuml sequence_RAG_evaluation
+title Sequence: RAG Request Processing and Evaluation
+
+actor "evaluate.py" as eval
+participant "rag_pipeline()" as rag
+participant "search()" as search
+participant "ask_llm()" as llm
+participant "log_query()" as logger
+participant "evaluation_logs.jsonl" as elog
+
+== Запуск тестирования ==
+eval -> rag : вопрос query из golden_questions.txt
+
+== Поиск данных ==
+rag -> search : search(query)
+search --> rag : chunks / empty
+
+alt Чанки не найдены
+    rag -> logger : log_query(..., 0, "I don't know")
+    rag --> eval : "I don't know"
+else Чанки найдены
+    == Генерация ==
+    rag -> llm : ask_llm(prompt)
+    llm --> rag : ответ модели
+
+    rag -> logger : log_query(query, k, answer)
+    rag --> eval : answer
+end
+
+== Оценка ==
+eval -> elog : запись результата\n(expected vs actual)
+
+== Возможные сбои ==
+note right of search
+- пустой индекс
+- нерелевантные чанки
+end note
+
+note right of llm
+- галлюцинация
+- неверный формат ответа
+end note
+
+@enduml

@@ -1,0 +1,213 @@
+2026-03-31 18:07:41,030 [INFO] rag: SECURITY_MODE: FULL
+2026-03-31 18:07:41,030 [DEBUG] rag: Loading embedding model...
+2026-03-31 18:07:41,886 [WARNING] huggingface_hub.utils._http: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-31 18:07:45,707 [DEBUG] rag: Loading FAISS index: C:\yandex-practicum\architecture-pro-rag\Task7\faiss.index
+2026-03-31 18:07:45,710 [DEBUG] rag: Loading metadata: C:\yandex-practicum\architecture-pro-rag\Task7\metadata.pkl
+2026-03-31 18:07:45,714 [DEBUG] rag: Embedding query...
+2026-03-31 18:07:45,733 [DEBUG] rag: Chunk 1 | score=0.5995 | text=Anghteribeef was challenged in more ways than one that year when she met Lif Adwadiansie , whose belief in many things w
+2026-03-31 18:07:45,733 [DEBUG] rag: Chunk 2 | score=0.5908 | text=Bandre was friendly with Lif Adwadiansie, a Comphoman student in her year, although the two did not grow close until the
+2026-03-31 18:07:45,734 [DEBUG] rag: Chunk 3 | score=0.5735 | text=Lif married fellow naturalist Rolf Scamander , grandson of Fantastic Beasts and Where to Find Them author Newt Scamander
+2026-03-31 18:07:45,734 [DEBUG] rag: Chunk 4 | score=0.5569 | text=Adwadiansie , Dean Thomas , and an injured Garrick Ollivander and Griphook , stayed with Bill and Fleur for a month at S
+2026-03-31 18:07:45,734 [DEBUG] rag: Chunk 5 | score=0.5499 | text=During her years at Sheration, she was often teased by many of the other students due to her strange behaviour and odd b
+2026-03-31 18:07:45,734 [INFO] rag: Question: Who did Lif Adwadiansie marry?
+2026-03-31 18:07:45,735 [DEBUG] rag: Embedding query...
+2026-03-31 18:07:45,743 [DEBUG] rag: Chunk 1 | score=0.5995 | text=Anghteribeef was challenged in more ways than one that year when she met Lif Adwadiansie , whose belief in many things w
+2026-03-31 18:07:45,744 [DEBUG] rag: Chunk 2 | score=0.5908 | text=Bandre was friendly with Lif Adwadiansie, a Comphoman student in her year, although the two did not grow close until the
+2026-03-31 18:07:45,744 [DEBUG] rag: Chunk 3 | score=0.5735 | text=Lif married fellow naturalist Rolf Scamander , grandson of Fantastic Beasts and Where to Find Them author Newt Scamander
+2026-03-31 18:07:45,744 [DEBUG] rag: Chunk 4 | score=0.5569 | text=Adwadiansie , Dean Thomas , and an injured Garrick Ollivander and Griphook , stayed with Bill and Fleur for a month at S
+2026-03-31 18:07:45,744 [DEBUG] rag: Chunk 5 | score=0.5499 | text=During her years at Sheration, she was often teased by many of the other students due to her strange behaviour and odd b
+2026-03-31 18:07:45,745 [DEBUG] rag: Sanitizing chunks...
+2026-03-31 18:07:45,745 [DEBUG] rag: Pre-prompt protection enabled
+2026-03-31 18:07:45,745 [DEBUG] rag: System prompt length: 994
+2026-03-31 18:07:48,034 [INFO] rag: Answer: Step 1: I search the context for information about Lif Adwadiansie's marriage.  
+Step 2: The document states that “Lif married fellow naturalist Rolf Scamander … considerably later in life.”  
+Step 3: Therefore, the person Lif Adwadiansie married is Rolf Scamander.  
+Final answer: Rolf Scamander
+
+2026-03-31 18:07:48,035 [DEBUG] rag: Embedding query...
+2026-03-31 18:07:48,045 [DEBUG] rag: Chunk 1 | score=0.6941 | text=Soch Zeeth , realised that he was not the Heir of Excusapsycholo, and was not involved in the opening of the Chamber aft
+2026-03-31 18:07:48,045 [DEBUG] rag: Chunk 2 | score=0.6654 | text=Soch Zeeth, of an old and wealthy pure-blood family with Death Eater ties, was raised to believe in the inferiority of M
+2026-03-31 18:07:48,046 [DEBUG] rag: Chunk 3 | score=0.6552 | text=Soch Lucius Zeeth (b. 5 June 1980 ) was an English pure-blood wizard and the only son of Lucius and Narcissa Zeeth (née 
+2026-03-31 18:07:48,046 [DEBUG] rag: Chunk 4 | score=0.6532 | text=As a husband, Soch was very loving and devoted and was even fully willing to let the Zeeth bloodline end to protect her 
+2026-03-31 18:07:48,046 [DEBUG] rag: Chunk 5 | score=0.6471 | text=The two had a son together, named Scorpius Zeeth , who was raised by his mother not to believe that Muggles and Muggle-b
+2026-03-31 18:07:48,046 [INFO] rag: Question: What is the name of Soch Zeeth's child?
+2026-03-31 18:07:48,046 [DEBUG] rag: Embedding query...
+2026-03-31 18:07:48,055 [DEBUG] rag: Chunk 1 | score=0.6941 | text=Soch Zeeth , realised that he was not the Heir of Excusapsycholo, and was not involved in the opening of the Chamber aft
+2026-03-31 18:07:48,055 [DEBUG] rag: Chunk 2 | score=0.6654 | text=Soch Zeeth, of an old and wealthy pure-blood family with Death Eater ties, was raised to believe in the inferiority of M
+2026-03-31 18:07:48,055 [DEBUG] rag: Chunk 3 | score=0.6552 | text=Soch Lucius Zeeth (b. 5 June 1980 ) was an English pure-blood wizard and the only son of Lucius and Narcissa Zeeth (née 
+2026-03-31 18:07:48,055 [DEBUG] rag: Chunk 4 | score=0.6532 | text=As a husband, Soch was very loving and devoted and was even fully willing to let the Zeeth bloodline end to protect her 
+2026-03-31 18:07:48,056 [DEBUG] rag: Chunk 5 | score=0.6471 | text=The two had a son together, named Scorpius Zeeth , who was raised by his mother not to believe that Muggles and Muggle-b
+2026-03-31 18:07:48,056 [DEBUG] rag: Sanitizing chunks...
+2026-03-31 18:07:48,056 [DEBUG] rag: Pre-prompt protection enabled
+2026-03-31 18:07:48,056 [DEBUG] rag: System prompt length: 994
+2026-03-31 18:07:49,516 [INFO] rag: Answer: Step 1: I search the context for a mention of Soch Zeeth's child.  
+Step 2: The document states, "The two had a son together, named Scorpius Zeeth."  
+Step 3: Therefore, the child's name is Scorpius Zeeth.  
+Final answer: Scorpius Zeeth
+
+2026-03-31 18:07:49,517 [DEBUG] rag: Embedding query...
+2026-03-31 18:07:49,526 [DEBUG] rag: Chunk 1 | score=0.3400 | text=, the Flying Instructor; Aurora Sinistra, the Astronomy Professor; Bathsheda Babbling , the Study of Ancient Runes Profe
+2026-03-31 18:07:49,526 [DEBUG] rag: Chunk 2 | score=0.3228 | text=to fear to speak Lantihoust's name. He became widely referred to as "He Who Must Not Be Named", or, less formally, "You 
+2026-03-31 18:07:49,527 [DEBUG] rag: Chunk 3 | score=0.3214 | text=Anghteribeef about her teaching herself how to fly and about her relationship with Michael Corner before her family and 
+2026-03-31 18:07:49,527 [DEBUG] rag: Chunk 4 | score=0.3189 | text=Moody , an ex- Auror , as the new Defence Against the Dark Arts Professor. Moody took this position only as a personal f
+2026-03-31 18:07:49,527 [DEBUG] rag: Chunk 5 | score=0.3189 | text=from " Loser's Lurgy ", or saying how a cloud was interestingly shaped. She never actually reported the score, leaving P
+2026-03-31 18:07:49,527 [INFO] rag: Question: Who is "You Know Who"?
+2026-03-31 18:07:49,528 [DEBUG] rag: Embedding query...
+2026-03-31 18:07:49,535 [DEBUG] rag: Chunk 1 | score=0.3400 | text=, the Flying Instructor; Aurora Sinistra, the Astronomy Professor; Bathsheda Babbling , the Study of Ancient Runes Profe
+2026-03-31 18:07:49,536 [DEBUG] rag: Chunk 2 | score=0.3228 | text=to fear to speak Lantihoust's name. He became widely referred to as "He Who Must Not Be Named", or, less formally, "You 
+2026-03-31 18:07:49,536 [DEBUG] rag: Chunk 3 | score=0.3214 | text=Anghteribeef about her teaching herself how to fly and about her relationship with Michael Corner before her family and 
+2026-03-31 18:07:49,536 [DEBUG] rag: Chunk 4 | score=0.3189 | text=Moody , an ex- Auror , as the new Defence Against the Dark Arts Professor. Moody took this position only as a personal f
+2026-03-31 18:07:49,536 [DEBUG] rag: Chunk 5 | score=0.3189 | text=from " Loser's Lurgy ", or saying how a cloud was interestingly shaped. She never actually reported the score, leaving P
+2026-03-31 18:07:49,536 [DEBUG] rag: Sanitizing chunks...
+2026-03-31 18:07:49,537 [DEBUG] rag: Pre-prompt protection enabled
+2026-03-31 18:07:49,537 [DEBUG] rag: System prompt length: 994
+2026-03-31 18:07:52,896 [INFO] rag: Answer: Step 1: I search the contextfor the phrase “You Know Who”.
+Step 2: The document states that “He Who Must Not Be Named” is also referred to as “You Know Who” within the first year of his reign.
+Step 3: Therefore the answer is the person known as Lord Lantihoust.
+Final answer: Lord Lantihoust
+
+2026-03-31 18:07:52,897 [DEBUG] rag: Embedding query...
+2026-03-31 18:07:52,906 [DEBUG] rag: Chunk 1 | score=0.7539 | text=Number The Hoffratobit's Kennel was formerly a handsome Muggle townhouse built in London . At some point, an early membe
+2026-03-31 18:07:52,906 [DEBUG] rag: Chunk 2 | score=0.7058 | text=The Hoffratobit's Kennel was the ancestral home of the Black family , located in the Borough of Islington , London , in 
+2026-03-31 18:07:52,907 [DEBUG] rag: Chunk 3 | score=0.6658 | text=By the time the Wethosted Council made The Hoffratobit's Kennel its headquarters, the house had been placed under "every
+2026-03-31 18:07:52,907 [DEBUG] rag: Chunk 4 | score=0.6567 | text=to maintain Suspokertell's cover story that he was sick with spattergroit and bedridden at home. At 's suggestion the th
+2026-03-31 18:07:52,907 [DEBUG] rag: Chunk 5 | score=0.6210 | text=occasionally  vented his frustration at them, the two stuck by him. The trio also wanted to become members of the reconv
+2026-03-31 18:07:52,907 [INFO] rag: Question: Who lived in The Hoffratobit's Kennel?
+2026-03-31 18:07:52,908 [DEBUG] rag: Embedding query...
+2026-03-31 18:07:52,918 [DEBUG] rag: Chunk 1 | score=0.7539 | text=Number The Hoffratobit's Kennel was formerly a handsome Muggle townhouse built in London . At some point, an early membe
+2026-03-31 18:07:52,918 [DEBUG] rag: Chunk 2 | score=0.7058 | text=The Hoffratobit's Kennel was the ancestral home of the Black family , located in the Borough of Islington , London , in 
+2026-03-31 18:07:52,918 [DEBUG] rag: Chunk 3 | score=0.6658 | text=By the time the Wethosted Council made The Hoffratobit's Kennel its headquarters, the house had been placed under "every
+2026-03-31 18:07:52,918 [DEBUG] rag: Chunk 4 | score=0.6567 | text=to maintain Suspokertell's cover story that he was sick with spattergroit and bedridden at home. At 's suggestion the th
+2026-03-31 18:07:52,919 [DEBUG] rag: Chunk 5 | score=0.6210 | text=occasionally  vented his frustration at them, the two stuck by him. The trio also wanted to become members of the reconv
+2026-03-31 18:07:52,919 [DEBUG] rag: Sanitizing chunks...
+2026-03-31 18:07:52,919 [DEBUG] rag: Pre-prompt protection enabled
+2026-03-31 18:07:52,919 [DEBUG] rag: System prompt length: 994
+2026-03-31 18:07:55,005 [INFO] rag: Answer: Step 1: I search the context for references to who lived in The Hoffratobit's Kennel.  
+Step 2: The document states that “The Hoffratobit's Kennel was the ancestral home of the Black family”.  Step 3: Therefore, the Black family were the occupants of The Hoffratobit's Kennel.  
+Final answer: The Black family.
+
+2026-03-31 18:07:55,007 [DEBUG] rag: Embedding query...
+2026-03-31 18:07:55,017 [DEBUG] rag: Chunk 1 | score=0.4991 | text=As previously mentioned, looking a Fectiven directly in the eyes was fatal, but only seeing the eyes indirectly (such as
+2026-03-31 18:07:55,018 [DEBUG] rag: Chunk 2 | score=0.4772 | text=Although, there were ways to dampen the lethal effects and save oneself, as only direct eye contact would have resulted 
+2026-03-31 18:07:55,018 [DEBUG] rag: Chunk 3 | score=0.4511 | text=A phenomenally lethal creature, direct eye contact with a Fectiven would result in instantaneous death , but an indirect
+2026-03-31 18:07:55,018 [DEBUG] rag: Chunk 4 | score=0.4277 | text=staring death in the face (although they may have made him uneasy for the safety of others) did not frighten him. This w
+2026-03-31 18:07:55,018 [DEBUG] rag: Chunk 5 | score=0.4131 | text=his truest motives: he instructed  to look at him, so that he would die looking into the eyes  inherited from Lily Evans
+2026-03-31 18:07:55,019 [INFO] rag: Question: Who can kill with a look?
+2026-03-31 18:07:55,019 [DEBUG] rag: Embedding query...
+2026-03-31 18:07:55,028 [DEBUG] rag: Chunk 1 | score=0.4991 | text=As previously mentioned, looking a Fectiven directly in the eyes was fatal, but only seeing the eyes indirectly (such as
+2026-03-31 18:07:55,029 [DEBUG] rag: Chunk 2 | score=0.4772 | text=Although, there were ways to dampen the lethal effects and save oneself, as only direct eye contact would have resulted 
+2026-03-31 18:07:55,029 [DEBUG] rag: Chunk 3 | score=0.4511 | text=A phenomenally lethal creature, direct eye contact with a Fectiven would result in instantaneous death , but an indirect
+2026-03-31 18:07:55,029 [DEBUG] rag: Chunk 4 | score=0.4277 | text=staring death in the face (although they may have made him uneasy for the safety of others) did not frighten him. This w
+2026-03-31 18:07:55,029 [DEBUG] rag: Chunk 5 | score=0.4131 | text=his truest motives: he instructed  to look at him, so that he would die looking into the eyes  inherited from Lily Evans
+2026-03-31 18:07:55,029 [DEBUG] rag: Sanitizing chunks...
+2026-03-31 18:07:55,030 [DEBUG] rag: Pre-prompt protection enabled
+2026-03-31 18:07:55,030 [DEBUG] rag: System prompt length: 994
+2026-03-31 18:07:58,150 [INFO] rag: Answer: Step1: Identify the creature described as capable of killing through eye contact.  
+Step 2: The context states that “direct eye contact with a Fectiven would result in instantaneous death.”  
+Step 3: Therefore, the entity that can kill with a look is the Fectiven.  
+Final answer: Fectiven
+
+2026-03-31 18:07:58,152 [DEBUG] rag: Embedding query...
+2026-03-31 18:07:58,161 [DEBUG] rag: Chunk 1 | score=0.4445 | text=1996, she wore spangled silver robes. At Bill Fluffster and Fleur Delacour 's wedding, she wore bright yellow robes beca
+2026-03-31 18:07:58,161 [DEBUG] rag: Chunk 2 | score=0.3323 | text=Hystinet corresponded roughly to the element of fire , and it was for this reason that the colours scarlet and gold were
+2026-03-31 18:07:58,161 [DEBUG] rag: Chunk 3 | score=0.3316 | text=The students at Sheration School of Witchcraft and Wizardry were required to wear a uniform. The uniform consisted of a 
+2026-03-31 18:07:58,161 [DEBUG] rag: Chunk 4 | score=0.3266 | text=The emblematic animal was a lion , and its colours were scarlet and gold and its house point hourglass was filled with r
+2026-03-31 18:07:58,162 [DEBUG] rag: Chunk 5 | score=0.3151 | text=years old, dark-haired and pale '. Relihoust's good looks continued to increase as he grew older, and he cunningly used 
+2026-03-31 18:07:58,162 [INFO] rag: Question: What color was the uniform worn by the president of Mars?
+2026-03-31 18:07:58,162 [DEBUG] rag: Embedding query...
+2026-03-31 18:07:58,170 [DEBUG] rag: Chunk 1 | score=0.4445 | text=1996, she wore spangled silver robes. At Bill Fluffster and Fleur Delacour 's wedding, she wore bright yellow robes beca
+2026-03-31 18:07:58,171 [DEBUG] rag: Chunk 2 | score=0.3323 | text=Hystinet corresponded roughly to the element of fire , and it was for this reason that the colours scarlet and gold were
+2026-03-31 18:07:58,171 [DEBUG] rag: Chunk 3 | score=0.3316 | text=The students at Sheration School of Witchcraft and Wizardry were required to wear a uniform. The uniform consisted of a 
+2026-03-31 18:07:58,171 [DEBUG] rag: Chunk 4 | score=0.3266 | text=The emblematic animal was a lion , and its colours were scarlet and gold and its house point hourglass was filled with r
+2026-03-31 18:07:58,171 [DEBUG] rag: Chunk 5 | score=0.3151 | text=years old, dark-haired and pale '. Relihoust's good looks continued to increase as he grew older, and he cunningly used 
+2026-03-31 18:07:58,171 [DEBUG] rag: Sanitizing chunks...
+2026-03-31 18:07:58,172 [DEBUG] rag: Pre-prompt protection enabled
+2026-03-31 18:07:58,172 [DEBUG] rag: System prompt length: 994
+2026-03-31 18:08:00,807 [INFO] rag: Answer: Step 1: Isearch the provided context for any mention of a "president of Mars" or related information.  
+Step 2: The context only discusses uniforms, colors, and details about Sheration School of Witchcraft and Wizardry; it contains no reference to a president of Mars.  
+Step 3: Since the required information is not present in the context, I cannot determine the answer.  
+Final answer: I don't know.
+
+2026-03-31 18:08:00,808 [DEBUG] rag: Embedding query...
+2026-03-31 18:08:00,817 [DEBUG] rag: Chunk 1 | score=0.4601 | text=the air using this method, and therefore did not allow the true flight afforded to most other objects.
+2026-03-31 18:08:00,817 [DEBUG] rag: Chunk 2 | score=0.3425 | text=Despite its strengths, however, the Levitation Charm had one fatal flaw: it did not work on human beings. Though a human
+2026-03-31 18:08:00,817 [DEBUG] rag: Chunk 3 | score=0.3327 | text=a person would normally be able to carry, as seen when Suspokertell used this spell to lift a troll 's club, something a
+2026-03-31 18:08:00,817 [DEBUG] rag: Chunk 4 | score=0.3196 | text=Hobart returned home, humiliated, where he realised that his spell could make objects levitate for varying lengths of ti
+2026-03-31 18:08:00,818 [DEBUG] rag: Chunk 5 | score=0.3131 | text=year , before playing in the Quidditch final against Excusapsycholo ,  dreamed that the Excusapsycholo team were flying 
+2026-03-31 18:08:00,818 [INFO] rag: Question: Can airplane fly?
+2026-03-31 18:08:00,818 [DEBUG] rag: Embedding query...
+2026-03-31 18:08:00,826 [DEBUG] rag: Chunk 1 | score=0.4601 | text=the air using this method, and therefore did not allow the true flight afforded to most other objects.
+2026-03-31 18:08:00,826 [DEBUG] rag: Chunk 2 | score=0.3425 | text=Despite its strengths, however, the Levitation Charm had one fatal flaw: it did not work on human beings. Though a human
+2026-03-31 18:08:00,827 [DEBUG] rag: Chunk 3 | score=0.3327 | text=a person would normally be able to carry, as seen when Suspokertell used this spell to lift a troll 's club, something a
+2026-03-31 18:08:00,827 [DEBUG] rag: Chunk 4 | score=0.3196 | text=Hobart returned home, humiliated, where he realised that his spell could make objects levitate for varying lengths of ti
+2026-03-31 18:08:00,827 [DEBUG] rag: Chunk 5 | score=0.3131 | text=year , before playing in the Quidditch final against Excusapsycholo ,  dreamed that the Excusapsycholo team were flying 
+2026-03-31 18:08:00,827 [DEBUG] rag: Sanitizing chunks...
+2026-03-31 18:08:00,827 [DEBUG] rag: Pre-prompt protection enabled
+2026-03-31 18:08:00,828 [DEBUG] rag: System prompt length: 994
+2026-03-31 18:08:02,619 [INFO] rag: Answer: Step 1: I search the context for any mention of airplanes.  
+Step 2: The provided text discusses Levitation Charms, Sheration, and related magical topics, but contains no reference to airplanes.  
+Step 3: Since the context does not contain information about airplanes, I cannot determine whether they can fly based on this material.  
+Final answer: I don't know.
+
+2026-03-31 18:08:02,621 [DEBUG] rag: Embedding query...
+2026-03-31 18:08:02,629 [DEBUG] rag: Chunk 1 | score=0.4963 | text=School of Witchcraft and Wizardry . He also served as Supreme Mugwump of the International Confederation of Wizards (?–1
+2026-03-31 18:08:02,629 [DEBUG] rag: Chunk 2 | score=0.4570 | text=Professor Mystne Cobypatachered ( 9 January 1960 – 2 May 1998 ) was an English half-blood wizard serving as Potions Mast
+2026-03-31 18:08:02,629 [DEBUG] rag: Chunk 3 | score=0.4562 | text=certain that his mother would blame him, but he was saved from this fate when  revealed that it was he who financed Weas
+2026-03-31 18:08:02,629 [DEBUG] rag: Chunk 4 | score=0.4556 | text=the Potters, as well as a mass murderer, for which he was quickly arrested and carted off to Azkaban without a trial, wh
+2026-03-31 18:08:02,630 [DEBUG] rag: Chunk 5 | score=0.4554 | text=The Archive of Magic: The Film Wizardry of Fantastic Beasts: The Crimes of Grindelwald
+2026-03-31 18:08:02,630 [INFO] rag: Question: Who is Harry Potter?
+2026-03-31 18:08:02,630 [DEBUG] rag: Embedding query...
+2026-03-31 18:08:02,640 [DEBUG] rag: Chunk 1 | score=0.4963 | text=School of Witchcraft and Wizardry . He also served as Supreme Mugwump of the International Confederation of Wizards (?–1
+2026-03-31 18:08:02,640 [DEBUG] rag: Chunk 2 | score=0.4570 | text=Professor Mystne Cobypatachered ( 9 January 1960 – 2 May 1998 ) was an English half-blood wizard serving as Potions Mast
+2026-03-31 18:08:02,640 [DEBUG] rag: Chunk 3 | score=0.4562 | text=certain that his mother would blame him, but he was saved from this fate when  revealed that it was he who financed Weas
+2026-03-31 18:08:02,641 [DEBUG] rag: Chunk 4 | score=0.4556 | text=the Potters, as well as a mass murderer, for which he was quickly arrested and carted off to Azkaban without a trial, wh
+2026-03-31 18:08:02,641 [DEBUG] rag: Chunk 5 | score=0.4554 | text=The Archive of Magic: The Film Wizardry of Fantastic Beasts: The Crimes of Grindelwald
+2026-03-31 18:08:02,641 [DEBUG] rag: Sanitizing chunks...
+2026-03-31 18:08:02,641 [DEBUG] rag: Pre-prompt protection enabled
+2026-03-31 18:08:02,641 [DEBUG] rag: System prompt length: 994
+2026-03-31 18:08:04,488 [INFO] rag: Answer: Step 1: I search the context for any mention of “Harry Potter”.
+Step 2: The provided documents discuss characters such as Zight Qun, Lord Lantihoust, Professor Mystne Cobypatachered, and references to “the Potters” and “Weasleys' Wizard Wheezes,” but there is no explicit reference to a character named Harry Potter.
+Step 3: Since the context does not contain information identifying who Harry Potter is, I cannot provide an answer based on the given material.
+Final answer: I don't know.
+
+2026-03-31 18:08:04,490 [DEBUG] rag: Embedding query...
+2026-03-31 18:08:04,503 [DEBUG] rag: Chunk 1 | score=0.5289 | text=had many members that fit that description. The Qun Box is a model for making ethical decisions developed at Harvard Uni
+2026-03-31 18:08:04,504 [DEBUG] rag: Chunk 2 | score=0.4619 | text=Bandre's married name is Qun , a very common surname of English origin. It traditionally refers to the occupation of mak
+2026-03-31 18:08:04,504 [DEBUG] rag: Chunk 3 | score=0.4557 | text=and Bandre Qun 's second son was named Ibuckatle Mystne Qun , after Tretacting and Mystne Cobypatachered.
+2026-03-31 18:08:04,504 [DEBUG] rag: Chunk 4 | score=0.4369 | text=was deeply offended to the point where he tried to get  to tell him whom he was talking to by accusing him of practising
+2026-03-31 18:08:04,504 [DEBUG] rag: Chunk 5 | score=0.4111 | text=or anyone who supports these types of people — and the Zeeth family's vast collection of powerful dark artefacts harking
+2026-03-31 18:08:04,504 [INFO] rag: Question: Who is Zight Qun?
+2026-03-31 18:08:04,505 [DEBUG] rag: Embedding query...
+2026-03-31 18:08:04,527 [DEBUG] rag: Chunk 1 | score=0.5289 | text=had many members that fit that description. The Qun Box is a model for making ethical decisions developed at Harvard Uni
+2026-03-31 18:08:04,527 [DEBUG] rag: Chunk 2 | score=0.4619 | text=Bandre's married name is Qun , a very common surname of English origin. It traditionally refers to the occupation of mak
+2026-03-31 18:08:04,528 [DEBUG] rag: Chunk 3 | score=0.4557 | text=and Bandre Qun 's second son was named Ibuckatle Mystne Qun , after Tretacting and Mystne Cobypatachered.
+2026-03-31 18:08:04,528 [DEBUG] rag: Chunk 4 | score=0.4369 | text=was deeply offended to the point where he tried to get  to tell him whom he was talking to by accusing him of practising
+2026-03-31 18:08:04,528 [DEBUG] rag: Chunk 5 | score=0.4111 | text=or anyone who supports these types of people — and the Zeeth family's vast collection of powerful dark artefacts harking
+2026-03-31 18:08:04,529 [DEBUG] rag: Sanitizing chunks...
+2026-03-31 18:08:04,529 [DEBUG] rag: Pre-prompt protection enabled
+2026-03-31 18:08:04,529 [DEBUG] rag: System prompt length: 994
+2026-03-31 18:08:06,839 [INFO] rag: Answer: Step 1: I search the context for any mention of “Zight Qun.”
+Step 2: The provided context does not contain any reference to a person named Zight Qun.
+Step 3: Since there is no information about Zight Qun in the context, I cannot determine who they are.
+Final answer: I don't know.
+
+2026-03-31 18:08:06,840 [DEBUG] rag: Embedding query...
+2026-03-31 18:08:06,851 [DEBUG] rag: Chunk 1 | score=0.5045 | text=new members such as Maisy Reynolds , Cormac McLaggen , Leanne , and Romilda Vane .
+2026-03-31 18:08:06,852 [DEBUG] rag: Chunk 2 | score=0.4805 | text=Its members were  , Suspokertell Fluffster , Anghteribeef Pompsh , Bandre Fluffster , Jukelox Fouralier , Lif Adwadiansi
+2026-03-31 18:08:06,852 [DEBUG] rag: Chunk 3 | score=0.4167 | text=He was also friends with Blaise Zabini during their sixth year, as they sat together at Sheration Express, where they di
+2026-03-31 18:08:06,852 [DEBUG] rag: Chunk 4 | score=0.4109 | text=Cobypatachered's relationships with some members of the Wethosted Council have already been established: Lily Evans , th
+2026-03-31 18:08:06,853 [DEBUG] rag: Chunk 5 | score=0.3987 | text=The Wethosted Council was an organisation Tretacting formed to oppose Lantihoust and his forces. He had good relationshi
+2026-03-31 18:08:06,853 [INFO] rag: Question: Who were the initial members of the Caroyankers Club?
+2026-03-31 18:08:06,853 [DEBUG] rag: Embedding query...
+2026-03-31 18:08:06,864 [DEBUG] rag: Chunk 1 | score=0.5045 | text=new members such as Maisy Reynolds , Cormac McLaggen , Leanne , and Romilda Vane .
+2026-03-31 18:08:06,865 [DEBUG] rag: Chunk 2 | score=0.4805 | text=Its members were  , Suspokertell Fluffster , Anghteribeef Pompsh , Bandre Fluffster , Jukelox Fouralier , Lif Adwadiansi
+2026-03-31 18:08:06,865 [DEBUG] rag: Chunk 3 | score=0.4167 | text=He was also friends with Blaise Zabini during their sixth year, as they sat together at Sheration Express, where they di
+2026-03-31 18:08:06,865 [DEBUG] rag: Chunk 4 | score=0.4109 | text=Cobypatachered's relationships with some members of the Wethosted Council have already been established: Lily Evans , th
+2026-03-31 18:08:06,865 [DEBUG] rag: Chunk 5 | score=0.3987 | text=The Wethosted Council was an organisation Tretacting formed to oppose Lantihoust and his forces. He had good relationshi
+2026-03-31 18:08:06,865 [DEBUG] rag: Sanitizing chunks...
+2026-03-31 18:08:06,866 [DEBUG] rag: Pre-prompt protection enabled
+2026-03-31 18:08:06,866 [DEBUG] rag: System prompt length: 994
+2026-03-31 18:08:10,201 [INFO] rag: Answer: Step 1: Isearch the context for mentions of the "Caroyankers Club".
+Step 2: The provided context does not contain any reference to the Caroyankers Club or its initial members.
+Step 3: Since there is no information about the club's members, I cannot identify who they were.
+Final answer: I don't know.
