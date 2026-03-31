@@ -1,0 +1,67 @@
+2026-03-31 17:26:51,146 [INFO] Index update started
+2026-03-31 17:26:51,148 [INFO] Use pytorch device_name: cpu
+2026-03-31 17:26:51,148 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-03-31 17:26:51,693 [INFO] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-31 17:26:51,694 [WARNING] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-31 17:26:51,790 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-03-31 17:26:52,014 [INFO] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-31 17:26:52,111 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-03-31 17:26:52,331 [INFO] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-31 17:26:52,428 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-03-31 17:26:52,653 [INFO] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-03-31 17:26:52,749 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+2026-03-31 17:26:52,971 [INFO] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-31 17:26:53,068 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-03-31 17:26:53,292 [INFO] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-31 17:26:53,395 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-03-31 17:26:53,623 [INFO] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-03-31 17:26:53,845 [INFO] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-31 17:26:53,942 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-03-31 17:26:54,271 [INFO] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-31 17:26:54,368 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-03-31 17:26:54,591 [INFO] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-31 17:26:54,689 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-31 17:26:54,926 [INFO] HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-31 17:26:55,154 [INFO] HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-31 17:26:55,444 [INFO] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-31 17:26:55,541 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-03-31 17:26:55,785 [INFO] HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-03-31 17:26:55,792 [INFO] Processed 12_Grimmauld_Place.txt: 59 chunks
+2026-03-31 17:26:55,793 [INFO] Processed Accio.txt: 13 chunks
+2026-03-31 17:26:55,794 [INFO] Processed Acromantula.txt: 20 chunks
+2026-03-31 17:26:55,829 [INFO] Processed Albus_Dumbledore.txt: 684 chunks
+2026-03-31 17:26:55,830 [INFO] Processed Alohomora.txt: 9 chunks
+2026-03-31 17:26:55,833 [INFO] Processed Avada_Kedavra.txt: 84 chunks
+2026-03-31 17:26:55,835 [INFO] Processed Basilisk.txt: 42 chunks
+2026-03-31 17:26:55,840 [INFO] Processed British_Ministry_of_Magic.txt: 155 chunks
+2026-03-31 17:26:55,842 [INFO] Processed Centaur.txt: 35 chunks
+2026-03-31 17:26:55,854 [INFO] Processed Draco_Malfoy.txt: 255 chunks
+2026-03-31 17:26:55,856 [INFO] Processed Dragon.txt: 41 chunks
+2026-03-31 17:26:55,861 [INFO] Processed Dumbledores_Army.txt: 93 chunks
+2026-03-31 17:26:55,864 [INFO] Processed Expecto_Patronum.txt: 72 chunks
+2026-03-31 17:26:55,865 [INFO] Processed Expelliarmus.txt: 6 chunks
+2026-03-31 17:26:55,876 [INFO] Processed First_Wizarding_War.txt: 208 chunks
+2026-03-31 17:26:55,877 [INFO] Processed First_World_War.txt: 11 chunks
+2026-03-31 17:26:55,891 [INFO] Processed Ginevra_Weasley.txt: 299 chunks
+2026-03-31 17:26:55,897 [INFO] Processed Global_Wizarding_War.txt: 102 chunks
+2026-03-31 17:26:55,898 [INFO] Processed Gryffindor.txt: 26 chunks
+2026-03-31 17:26:55,899 [INFO] Processed Halloween_feast.txt: 11 chunks
+2026-03-31 17:26:55,925 [INFO] Processed Hermione_Granger.txt: 547 chunks
+2026-03-31 17:26:55,934 [INFO] Processed Hogwarts_School_of_Witchcraft_and_Wizardry.txt: 258 chunks
+2026-03-31 17:26:55,936 [INFO] Processed Hufflepuff.txt: 24 chunks
+2026-03-31 17:26:55,936 [INFO] Processed Lumos.txt: 9 chunks
+2026-03-31 17:26:55,946 [INFO] Processed Luna_Lovegood.txt: 207 chunks
+2026-03-31 17:26:55,957 [INFO] Processed Neville_Longbottom.txt: 241 chunks
+2026-03-31 17:26:55,958 [INFO] Processed Obliviate.txt: 25 chunks
+2026-03-31 17:26:55,962 [INFO] Processed Order_of_the_Phoenix.txt: 92 chunks
+2026-03-31 17:26:55,963 [INFO] Processed Pixie.txt: 13 chunks
+2026-03-31 17:26:55,965 [INFO] Processed Ravenclaw.txt: 26 chunks
+2026-03-31 17:26:55,965 [INFO] Processed Riddikulus.txt: 9 chunks
+2026-03-31 17:26:55,985 [INFO] Processed Ronald_Weasley.txt: 466 chunks
+2026-03-31 17:26:55,987 [INFO] Processed Sectumsempra.txt: 23 chunks
+2026-03-31 17:26:56,007 [INFO] Processed Severus_Snape.txt: 477 chunks
+2026-03-31 17:26:56,009 [INFO] Processed Slytherin.txt: 55 chunks
+2026-03-31 17:26:56,038 [INFO] Processed Tom_Riddle.txt: 606 chunks
+2026-03-31 17:26:56,040 [INFO] Processed Wingardium_Leviosa.txt: 19 chunks
+2026-03-31 17:27:31,220 [INFO] Creating new FAISS index
+2026-03-31 17:27:31,231 [INFO] index updated at 2026-03-31, 37 files added, 5322 chunks added, index size: 5322, errors: 0
