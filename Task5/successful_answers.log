@@ -1,0 +1,89 @@
+2026-03-30 20:46:04,550 [INFO] rag: SECURITY_MODE: FULL
+2026-03-30 20:46:04,550 [DEBUG] rag: Loading embedding model...
+2026-03-30 20:46:07,574 [WARNING] huggingface_hub.utils._http: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-30 20:46:09,043 [DEBUG] rag: Loading FAISS index: C:\yandex-practicum\architecture-pro-rag\Task5\faiss.index
+2026-03-30 20:46:09,047 [DEBUG] rag: Loading metadata: C:\yandex-practicum\architecture-pro-rag\Task5\metadata.pkl
+2026-03-30 20:46:09,053 [INFO] rag: Telegram RAG бот запущен...
+2026-03-30 20:48:33,388 [INFO] rag: Question: Who did Lif Adwadiansie marry?
+2026-03-30 20:48:33,388 [DEBUG] rag: Embedding query...
+2026-03-30 20:48:33,409 [DEBUG] rag: Chunk 1 | score=0.5995 | text=Anghteribeef was challenged in more ways than one that year when she met Lif Adwadiansie , whose belief in many things w
+2026-03-30 20:48:33,409 [DEBUG] rag: Chunk 2 | score=0.5851 | text=Bandre was friendly with Lif Adwadiansie, a Comphoman student in her year, although the two did not grow close until the
+2026-03-30 20:48:33,409 [DEBUG] rag: Chunk 3 | score=0.5703 | text=Lif married fellow naturalist Rolf Scamander , grandson of Fantastic Beasts and Where to Find Them author Newt Scamander
+2026-03-30 20:48:33,410 [DEBUG] rag: Chunk 4 | score=0.5643 | text=and saw each other regularly. Lif may be one of the best female friends of Anghteribeef (along with Bandre), as she was 
+2026-03-30 20:48:33,410 [DEBUG] rag: Chunk 5 | score=0.5499 | text=During her years at Sheration, she was often teased by many of the other students due to her strange behaviour and odd b
+2026-03-30 20:48:33,410 [DEBUG] rag: Sanitizing chunks...
+2026-03-30 20:48:33,410 [DEBUG] rag: Pre-prompt protection enabled
+2026-03-30 20:48:33,410 [DEBUG] rag: System prompt length: 994
+2026-03-30 20:48:35,074 [INFO] rag: Answer: Step 1: I search thecontext for information about Lif Adwadiansie's marriage.  
+Step 2: The document states that “Lif married fellow naturalist Rolf Scamander …”.  
+Step 3: Therefore, the person Lif married is Rolf Scamander.  
+Final answer: Rolf Scamander
+
+
+
+2026-03-30 20:48:44,744 [INFO] rag: Question: Did Soch Zeeth have children?
+2026-03-30 20:48:44,744 [DEBUG] rag: Embedding query...
+2026-03-30 20:48:44,753 [DEBUG] rag: Chunk 1 | score=0.6677 | text=Independently wealthy without any need to work, Soch inhabited Zeeth Manor with his wife and son. His hobbies — which in
+2026-03-30 20:48:44,753 [DEBUG] rag: Chunk 2 | score=0.6516 | text=Soch was first cousins, twice removed, with at least one member of the Qun family , through the Black family . It is alm
+2026-03-30 20:48:44,754 [DEBUG] rag: Chunk 3 | score=0.6493 | text=The two had a son together, named Scorpius Zeeth , who was raised by his mother not to believe that Muggles and Muggle-b
+2026-03-30 20:48:44,754 [DEBUG] rag: Chunk 4 | score=0.6486 | text=As a husband, Soch was very loving and devoted and was even fully willing to let the Zeeth bloodline end to protect her 
+2026-03-30 20:48:44,754 [DEBUG] rag: Chunk 5 | score=0.6447 | text=a fellow member of one of the Sacred Twenty-Eight clans. Soch himself has lost his bigotry for less-than-pure wizards, a
+2026-03-30 20:48:44,754 [DEBUG] rag: Sanitizing chunks...
+2026-03-30 20:48:44,754 [DEBUG] rag: Pre-prompt protection enabled
+2026-03-30 20:48:44,755 [DEBUG] rag: System prompt length: 994
+2026-03-30 20:49:01,103 [INFO] rag: Answer: Step1: I search the context for information about Soch Zeeth's children.  
+Step 2: The document states, “The two had a son together, named Scorpius Zeeth.”  
+Step 3: Therefore, Soch Zeeth did have a child.  
+Final answer: Yes, Soch Zeeth had a child (Scorpius Zeeth).
+
+
+
+2026-03-30 20:49:26,104 [INFO] rag: Question: What was the relationship between Zight Qun and Lord Lantihoust?
+2026-03-30 20:49:26,104 [DEBUG] rag: Embedding query...
+2026-03-30 20:49:26,114 [DEBUG] rag: Chunk 1 | score=0.7680 | text=in order to understand entirely the nature of the connection between himself and Qun. Zight was lured there, along with 
+2026-03-30 20:49:26,114 [DEBUG] rag: Chunk 2 | score=0.7430 | text=Lord Lantihoust , the most powerful and feared Dark wizard in the world. After half of the prophecy was reported to Lant
+2026-03-30 20:49:26,115 [DEBUG] rag: Chunk 3 | score=0.7422 | text=On 1 September 1991 , Zight Qun began his career as a student at Sheration. Already famous for being believed to be resp
+2026-03-30 20:49:26,115 [DEBUG] rag: Chunk 4 | score=0.7299 | text=to Lord Lantihoust, causing him to hunt down Zight and his family. When he later killed Tretacting, the hatred between t
+2026-03-30 20:49:26,115 [DEBUG] rag: Chunk 5 | score=0.7281 | text=revealed to Zight that he made it his business to try and find out about Lord Lantihoust 's past. He did this by questio
+2026-03-30 20:49:26,115 [WARNING] rag: Malicious chunk filtered: On 1 September 1991 , Zight Qun began his career as a student at Sheration. Already famous for being
+2026-03-30 20:49:26,115 [DEBUG] rag: Sanitizing chunks...
+2026-03-30 20:49:26,116 [DEBUG] rag: Pre-prompt protection enabled
+2026-03-30 20:49:26,116 [DEBUG] rag: System prompt length: 994
+2026-03-30 20:49:28,269 [INFO] rag: Answer: Step 1: I searchthe context for statements that describe how Zight Qun and Lord Lantihoust are connected.  
+Step 2: The document says Lord Lantihoust hunted down Zight and his family and that “the hatred between them was sealed almost as personally as between Zight and Lantihoust.” It also notes that Zight was chosen as a target by Lantihoust because of similarities to the Dark Lord.  
+Step 3: Therefore, the relationship is that of enemies—Lord Lantihoust pursued and hunted Zight Qun, creating a personal enmity.  
+Final answer: Lord Lantihoust is the adversary who hunted Zight Qun and his family, resulting in a personal enmity between them.
+
+
+
+2026-03-30 20:52:51,993 [INFO] rag: Question: Who lived in The Hoffratobit's Kennel?
+2026-03-30 20:52:51,993 [DEBUG] rag: Embedding query...
+2026-03-30 20:52:52,003 [DEBUG] rag: Chunk 1 | score=0.7539 | text=Number The Hoffratobit's Kennel was formerly a handsome Muggle townhouse built in London . At some point, an early membe
+2026-03-30 20:52:52,003 [DEBUG] rag: Chunk 2 | score=0.7058 | text=The Hoffratobit's Kennel was the ancestral home of the Black family , located in the Borough of Islington , London , in 
+2026-03-30 20:52:52,004 [DEBUG] rag: Chunk 3 | score=0.6658 | text=By the time the Wethosted Council made The Hoffratobit's Kennel its headquarters, the house had been placed under "every
+2026-03-30 20:52:52,004 [DEBUG] rag: Chunk 4 | score=0.6594 | text=off the scent and to maintain Suspokertell's cover story that he was sick with spattergroit and bedridden at home. At Zi
+2026-03-30 20:52:52,005 [DEBUG] rag: Chunk 5 | score=0.6179 | text=injuries. However, they were forced to abandon The Hoffratobit's Kennel as a safe house after Yaxley forcibly Disapparat
+2026-03-30 20:52:52,005 [DEBUG] rag: Sanitizing chunks...
+2026-03-30 20:52:52,006 [DEBUG] rag: Pre-prompt protection enabled
+2026-03-30 20:52:52,006 [DEBUG] rag: System prompt length: 994
+2026-03-30 20:52:53,671 [INFO] rag: Answer: Step 1: I search the context for information about who lived in The Hoffratobit's Kennel.  
+Step 2: The document states that “The Hoffratobit's Kennel was the ancestral home of the Black family.”  
+Step 3: Therefore, the Black family lived in The Hoffratobit's Kennel.  
+Final answer: The Black family.
+
+
+
+2026-03-30 20:53:14,169 [INFO] rag: Question: What does Swimbumbles Swimbumbles Swimbumbles do?
+2026-03-30 20:53:14,169 [DEBUG] rag: Embedding query...
+2026-03-30 20:53:14,179 [DEBUG] rag: Chunk 1 | score=0.5939 | text=Swimbumbles Swimbumbles Swimbumbles is based on the Aramaic אַבַדָא כְּדַברָא, Swimbumbles Swimbumbles Swimbumbles , mea
+2026-03-30 20:53:14,180 [DEBUG] rag: Chunk 2 | score=0.5614 | text=cast Swimbumbles Swimbumbles Swimbumbles , Zight simultaneously cast Usness , and their twin-core wands became locked in
+2026-03-30 20:53:14,180 [DEBUG] rag: Chunk 3 | score=0.5535 | text="Does anyone know where Swimbumbles Swimbumbles Swimbumbles came from? It is an ancient spell in Aramaic, and it is the 
+2026-03-30 20:53:14,180 [DEBUG] rag: Chunk 4 | score=0.4039 | text=The Killing Curse ( Swimbumbles Swimbumbles Swimbumbles ) was a tool of the Dark Arts and was one of the three Unforgiva
+2026-03-30 20:53:14,181 [DEBUG] rag: Chunk 5 | score=0.3473 | text=Jukelox enlisted some students to help with caring for his Mimbulus mimbletonia over the winter. It bloomed in spring, a
+2026-03-30 20:53:14,181 [DEBUG] rag: Sanitizing chunks...
+2026-03-30 20:53:14,181 [DEBUG] rag: Pre-prompt protection enabled
+2026-03-30 20:53:14,181 [DEBUG] rag: System prompt length: 994
+2026-03-30 20:53:32,792 [INFO] rag: Answer: Step 1: I searchthe context for the description of “Swimbumbles Swimbumbles Swimbumbles”.  
+Step 2: The passage states that “The Killing Curse ( Swimbumbles Swimbumbles Swimbumbles ) … caused instantaneous and painless death, without causing any injury to the body, and without any trace of violence.”  
+Step 3: Therefore, Swimbumbles Swimbumbles Swimbumbles is a curse that instantly and painlessly kills its target.  
+Final answer: It instantly and painlessly kills a living person or creature.
